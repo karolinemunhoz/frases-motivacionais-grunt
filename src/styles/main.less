@@ -1,0 +1,48 @@
+@cor-fundo: #f7f2ff;          // lilás bem clarinho
+@cor-principal: #6c5ce7;     // roxo suave
+@cor-botao: #ff9ff3;         // rosa pastel
+@cor-botao-hover: #f78edb;   // rosa um pouco mais forte
+@cor-texto: #4b4b4b;
+
+body {
+    background-color: @cor-fundo;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(108, 92, 231, 0.15);
+}
+
+h1 {
+    color: @cor-principal;
+    margin-bottom: 24px;
+}
+
+button {
+    background-color: @cor-botao;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: @cor-botao-hover;
+    transform: scale(1.05);
+}
+
+.resultado {
+    margin-top: 32px;
+    font-size: 18px;
+    color: @cor-texto;
+    font-style: italic;
+}
